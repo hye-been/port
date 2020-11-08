@@ -1,0 +1,390 @@
+@charset "utf-8";
+/*main.css*/
+
+#ban {
+    background: url(../images/bgc1.jpg)no-repeat;
+    background-position: center;
+    height: 100%;
+    width: auto;
+}
+
+.box_text {
+    width: 40%;
+    height: 45%;
+    position: absolute;
+    left: 40%;
+    transform: translate(-40%, -33%);
+    top: 33%;
+    min-width: 600px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    /*background-color: aqua;*/
+    padding-top: 9%;
+    box-sizing: border-box;
+    font-size: 18px;
+
+}
+
+/*메인 페이지*/
+/*타이핑*/
+.typing-txt {
+    display: none;
+}
+
+.typing-txt > ul {
+    list-style: none;
+}
+
+.typing > ul li {
+    display: block;
+}
+
+.typing > ul li.on {
+    display: inline-block;
+    animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cursor {
+    0% {
+        border-right: 1px solid #fff
+    }
+
+    50% {
+        border-right: 1px solid #000
+    }
+
+    100% {
+        border-right: 1px solid #fff
+    }
+}
+
+
+
+/*2페이지*/
+.about {
+    display: flex;
+}
+
+/*좌측 영역*/
+.abimg {
+    width: 20%;
+    position: relative;
+    padding-top: 4%;
+    padding-left: 5%;
+}
+
+/*내사진*/
+.mypto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: url(../images/mypto.jpg)no-repeat;
+    background-size: 101%;
+    background-position-y: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*우측영역*/
+.abtxt {
+    padding-left: 4%;
+    padding-top: 4%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.pftit {
+    padding-bottom: 2%;
+    position: relative;
+
+}
+
+.pftit::after {
+    position: absolute;
+    content: '';
+    background-color: #fae2c8;
+    height: 5px;
+    width: 80px;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 15px 15px 0;
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes moving {
+    0% {
+        width: 80px;
+    }
+
+    50% {
+        width: 150px;
+    }
+
+    100% {
+        width: 80px;
+    }
+}
+
+
+/*프로필 텍스트*/
+.profile_txt {
+    font-size: 15px;
+    padding-top: 2%;
+}
+
+.profile_txt li {
+    padding-bottom: 0.5%;
+}
+
+/*프로필 아래 #4개 텍스트*/
+.profile_in_txt {
+    font-size: 15px;
+    padding-top: 10%;
+}
+
+.profile_in_txt li {
+    padding-bottom: 3%;
+}
+
+.in_tit {
+    font-size: 16px;
+    padding-bottom: 1.5%;
+}
+
+/************************* SKILL 부분 *************************/
+
+.chart_tit {
+    color: #e4bf99;
+    text-align: center;
+    font-size: 26px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* 스킬 5개 영역 */
+/*ul*/
+.circle {
+    display: flex;
+    padding-top: 15%;
+}
+
+.circle li {
+    width: 20%;
+}
+
+
+
+/*차트*/
+.chart {
+    float: left;
+    width: 100%;
+    /*height: 230px;*/
+    text-align: center;
+    /*border: 1px solid #000;*/
+}
+
+.chart span.title {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: 110px;
+    color: #291A0A;
+    font-weight: 700;
+}
+
+
+/*etc 텍스트*/
+.etc {
+    margin: 5% 0 0 7%;
+}
+
+.etc > h6 {
+    font-size: 35px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.etc_txt {
+    font-size: 20px;
+}
+
+
+
+/*********************************** 포트폴리오 ***********************************/
+.swiper-container {
+    width: 1000px;
+    height: 50%;
+    margin-top: ;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: transparent;
+
+    /* Center slide text vertically */
+    /*    display: flex;*/
+    align-items: center;
+    display: revert;
+}
+
+/*큰박스*/
+.swi_txtbox {
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.swi_img {
+    padding-top: 5%;
+}
+
+
+.swi_title {
+    display: flex;
+    padding-left: 35%;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.swi_title > button {
+    border: 0;
+    width: 9%;
+    background-color: #eeeeee;
+    padding: 10px 0;
+    /* margin-left: 5%; */
+    position: absolute;
+    right: 32%;
+    top: -23%;}
+
+/*색상과 원 박스*/
+.swi_color {
+    display: flex;
+    padding-left: 44%;
+}
+
+/*원 박스*/
+.swi_circle_box {
+    display: flex;
+    margin-top: 5px;
+}
+
+/*원 공통*/
+.swi_circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+/*1번색상*/
+.b1 {
+    background-color: #291A0A;
+
+}
+
+/*2번색상*/
+.b2 {
+    background-color: #FEF6EE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*info 영역*/
+
+.info_box {
+    padding-top: 10%;
+    text-align: center;
+}
+
+.info_title {
+    font-size: ;
+}
+
+.info_txt1,
+.info_txt2 {
+    font-size: ;
+    padding-top: 1%;
+}
+
+.info_circle {
+    display: flex;
+    flex: 1;
+    padding-top: 10%;
+
+}
+
+.info_circle li {
+    width: 33.33%;
+    /*border: 1px solid #000;*/
+    height: auto;
+    box-sizing: border-box;
+    padding-left: 6%;
+}
+
+.circle_box {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    /*background-color: #000;*/
+    border: 1px solid rgba(41, 26, 10, 0.51);
+}
+
+
+
+
+/***************************Contact 부분**************************************/
+
+/*글박스1*/
+.info_title {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*글박스2*/
+.info_txt {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+/*세개의 원 전체 박스*/
+.info_circle {}
+
+.icon {
+    text-align: center;
+    padding-top: 22%;
+}
+
+/*이미지*/
+.icon img {
+    width: 20%;
+}
+
+/*이미지 텍스트*/
+.icon_text {
+    text-align: center;
+    padding-top: 12%;
+}

@@ -1,0 +1,108 @@
+@charset "utf-8";
+/*common.css*/
+
+html,
+body {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color:#291A0A;
+}
+
+
+/*전체 페이지부모(스크롤박스역할)*/
+.wrap {
+    width: 100%;
+    height: 100%;
+    /*높이값 보이는 화면기준*/
+    /*
+            overflow-x: hidden;
+            overflow-y: scroll;
+*/
+}
+
+/*이탈리체*/
+.em {
+    font-style: italic;
+}
+
+/* 흰색 글자 */
+.vt {
+    color: #fff;
+}
+
+/*띄어쓰기*/
+.spa{
+    display: block;
+}
+/*헤더 영역*/
+
+.top {
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    /*outline: 1px dashed red;*/
+
+}
+
+/*헤더 gnb*/
+.gnb ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2%;
+}
+
+.gnb ul > li {
+    padding-right: 2%;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/*매 페이지 제목*/
+.sub_title {
+   /* outline: 1px solid #000;*/
+    padding-top: 1%;
+    padding-left: 3%;
+    position: relative;
+    padding-bottom: 1%;
+}
+
+.sub_title::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #291A0A;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.sub_title h2 {
+    font-size: 64px;
+    font-weight: 300;
+}
+
+/*페이지 타이틀 크기*/
+.tit1{
+    width: 20%;
+}
+.tit2{
+    width: 15%;
+}
+
+.tit3{
+    width: 15%;
+}
+
+.tit4{
+    width: 20%;
+    margin-bottom: 10%;
+}
+
+.tit5{
+    width: 20%;
+}

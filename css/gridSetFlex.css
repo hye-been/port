@@ -1,0 +1,58 @@
+@charset "utf-8";
+/*Grid Set*/
+
+/*flex box 설정 class*/
+.fbx{
+    display: flex;
+    flex-wrap: wrap;
+    /*플렉스 줄바꿈*/
+    height: 100%;
+}
+
+/*12개 컬럼 개수별 %셋팅 class*/
+/*
+    flex item의 가로크기 지정
+    flex-basis에 셋팅함!
+*/
+.col-1 {flex-basis: 8.33%;}
+.col-2 {flex-basis: 16.66%;}
+.col-3 {flex-basis: 25%;}
+.col-4 {flex-basis: 33.33%;}
+.col-5 {flex-basis: 41.66%;}
+.col-6 {flex-basis: 50%;}
+.col-7 {flex-basis: 58.33%;}
+.col-8 {flex-basis: 66.66%;}
+.col-9 {flex-basis: 75%;}
+.col-10 {flex-basis: 83.33%;}
+.col-11 {flex-basis: 91.66%;}
+.col-12 {flex-basis: 100%;}
+
+/*"col-"로된 class클래스명면 float:left 주기*/
+[class*="col-"]{
+    flex-grow: 0;/*0은 따라늘지마*/
+    flex-shrink: 0;/*0은 따라줄지마*/
+    /*flex-basis만 적용되게함!*/
+    padding: 10px;
+    box-sizing: border-box;
+    outline: 1px dashed red;
+    height: 100%;
+}
+/*
+    [] 대괄호는 속성을 선택하는 CSS 선택자 기호임!
+    *= 오른쪽 문자열이 있기만 하면 선택함(별은 하늘에... 모든)
+    ^= 오른쪽 문자열이 시작하는 문자일때 선택함(웃으면서 시작^^)
+    $= 오른쪽 문자열이 끝나는 문자일때 선택함(돈받고 끝나라! $)
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+

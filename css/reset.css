@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* reset.css - 요소 초기화 */
+html,body,h1,h2,h3,h4,h5,h6,ul,ol,p{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+img{
+    border: none;
+    /*이미지링크시 테두리없앰*/
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 100%;
+    /*기본글자크기로 초기화*/
+}
+
+
+
+
+

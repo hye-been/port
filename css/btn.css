@@ -1,0 +1,214 @@
+@charset "utf-8";
+/*btn.css*/
+
+/*공통버튼 작업공간*/
+
+/*공통 버튼 속성*/
+.combtn {
+    display: flex;
+    padding: 6px 12px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.video_our_story_box {
+    width: 168px;
+}
+
+.ex_box {
+    width: 220px;
+}
+
+.view_all {
+    width: 158px;
+}
+
+.shop_now {
+    width: 178px;
+}
+
+.about_us {
+    width: 169px;
+}
+
+.inspirations {
+    width: 185px;
+}
+
+.learn_more,
+.learn_more2 {
+    width: 187px;
+}
+
+.learn_more2 {
+    margin: 0 auto;
+}
+
+
+/*공통 버튼 btn*/
+.combtn::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 0%;
+    right: 0%;
+    background-color: #a8b8a9;
+    transition: all .3s ease-in-out;
+    bottom: 0;
+
+}
+
+.combtn.comon::before {
+    width: 100%;
+    /*right: 0;*/
+    /*transition: all .3s ease-in-out;*/
+}
+
+
+/*공통 글자 속성*/
+.combtn_txt {
+    font-size: 1.2rem;
+    margin-right: 16px;
+    text-align: center;
+    padding-top: 13.5px;
+    transition: all .3s ease-in-out;
+}
+
+
+/*바로가기 화살표 버튼 큰박스*/
+.arrow_button_img {
+    width: 48px;
+    height: 48px;
+    background-color: #a8b8a9;
+    text-align: center;
+}
+
+.arrow_button_img img {
+    width: 20.5px;
+    height: 12.5px;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+/*공통 오버시 애니메이션*/
+.comon {
+    transition: all .3s ease-in-out;
+}
+
+/*오버시 애니메이션*/
+/*이미지 이동*/
+.comon .arrow_button_img,
+.comon .shop_button_img {
+    transform: translatex(5px);
+    transition: all .3s ease-in-out;
+}
+
+/*글자색 변경및 이동*/
+
+.comon .combtn_txt {
+    color: #a8b8a9;
+    transform: translatex(5px);
+    transition: all .3s ease-in-out;
+}
+
+/*바로가기 화살표 백그라운드 삭제*/
+
+.comon .arrow_button_img,
+.comon .video_our_story,
+.comon .shop_button_img {
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+}
+
+
+
+
+.hover_varrow,
+.hover_varrow1,
+.hover_varrow2,
+.hover_varrow3,
+.hover_varrow4,
+.hover_varrow5,
+.hover_varrow6,
+.hover_varrow7,
+.hover_varrow4-2 {
+    display: none;
+}
+
+
+
+
+/****************메인 영상 버튼*******************/
+
+/*바로가기 글자 공통*/
+.button_text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 12px;
+    transition: all .3s ease-in-out;
+}
+
+
+/*배너 영상 바로가기 큰 박스*/
+.ban_shortcuts_box {
+    display: flex;
+}
+
+/*버튼이미지 (재생버튼)*/
+.video_our_story {
+    background-color: #a8b8a9;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding-top: 11.5px;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+.comon .video_our_story,
+.comon .ex_box {
+    transform: translatex(5px);
+    transition: all .3s ease-in-out;
+}
+
+
+.video_our_story img {
+    width: 22px;
+    height: 23px;
+}
+
+
+/*버튼이미지 (쇼핑버튼)*/
+.shop_button_img {
+    background-color: #a8b8a9;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding-top: 13.5px;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+/* 쇼핑 버튼 이미지 크기 */
+.shop_button_img > img {
+    width: 19.5px;
+    height: 21px;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .view_all .combtn,.ex_box .combtn {
+        margin-left: 1vw;
+        padding: 0;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+  
+}
+
