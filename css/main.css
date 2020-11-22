@@ -1,6 +1,12 @@
 @charset "utf-8";
 /*main.css*/
 
+
+/*이거수정!!!*/
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+      z-index: -1;
+}
+
 #ban {
     background: url(../images/bgc1.jpg)no-repeat;
     background-position: center;
@@ -267,14 +273,8 @@
     position: absolute;
     right: 32%;
     top: -23%;
+    cursor: pointer;
 }
-
-.swiper-container-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-    z-index: -1;
-}
-
 
 /*색상과 원 박스*/
 .swi_color {
