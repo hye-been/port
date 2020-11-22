@@ -266,7 +266,15 @@
     /* margin-left: 5%; */
     position: absolute;
     right: 32%;
-    top: -23%;}
+    top: -23%;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    z-index: -1;
+}
+
 
 /*색상과 원 박스*/
 .swi_color {
